@@ -8,5 +8,12 @@ namespace LibrarySystemSln
 {
     internal class LibraryManager
     {
+
+
+       public void Assk(string prompt)
+        {
+            Console.WriteLine(prompt);
+            string answer = Console.ReadLine();
+        }
     }
 }
