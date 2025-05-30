@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibrarySystemSln
 {
-    internal class Magazine : LibraryItem
+    class Magazine : LibraryItem
     {
+
+        public string IssueNumber { get; set; }
+        public string Month { get; set; }
         public override void Display()
         {
-            Console.WriteLine($"[Magazine] - ID: {ID}  Title: {Title}  Year: {Year}");
+            Console.WriteLine($"[Magazine] - ID: {ID}  Title: {Title}  Year: {Year} IssueNumber: {IssueNumber} Month: {Month}");
 
         }
     }

@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace LibrarySystemSln
 {
-    internal class DVD : LibraryItem
+   class DVD : LibraryItem
     {
+
+        public string Director { get; set; }
+        public string Duration { get; set; }
         public override void Display()
         {
-            Console.WriteLine($"[DVD] - ID: {ID}  Title: {Title}  Year: {Year}");
+            Console.WriteLine($"[DVD] - ID: {ID}  Title: {Title}  Year: {Year} Director: {Director} Duration: {Duration}");
         }
     }
 }
