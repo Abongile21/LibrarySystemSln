@@ -12,7 +12,7 @@ namespace LibrarySystemSln
     {
         public string Title{ get; set; }
         public string ID { get; set; }
-        public string Year { get; set; }
+        public int Year { get; set; }
 
         public abstract void Display();
 
