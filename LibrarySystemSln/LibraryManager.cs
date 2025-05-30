@@ -10,7 +10,7 @@ namespace LibrarySystemSln
     {
 
 
-       public void Assk(string prompt)
+       public void Ask(string prompt)
         {
             Console.WriteLine(prompt);
             string answer = Console.ReadLine();
