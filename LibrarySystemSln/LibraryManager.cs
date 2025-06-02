@@ -21,33 +21,36 @@ namespace LibrarySystemSln
             {
                 "book" => new Book
                 {
-                    ID=id,
-                    Title=title,
-                    Year= year,
-                    Author= Ask("Enter author's name: "),
-                    Genre = Ask("Enter genre's name: ")
+                    ID = id,
+                    Title = title,
+                    Year = year,
+                    Author = Ask("Enter author's name: "),
+                    Genre = Ask("Enter genre's name: "),
+                    Type = type
 
                 },
 
                 "dvd" => new DVD
                 {
-                     ID = id,
-                     Title = title,
-                     Year = year,
-                     Director = Ask("Enter director's name: "),
-                     Duration = Ask("Enter duration: "),
+                    ID = id,
+                    Title = title,
+                    Year = year,
+                    Director = Ask("Enter director's name: "),
+                    Duration = Ask("Enter duration: "),
+                    Type = type
 
                 },
 
-                "magazine" =>new Magazine
+                "magazine" => new Magazine
                 {
 
-                     ID = id,
-                     Title = title,
-                     Year = year,
-                     IssueNumber=Ask("Enter the issue number: "),
-                     Month= Ask("Enter Month: ")
-                     
+                    ID = id,
+                    Title = title,
+                    Year = year,
+                    IssueNumber = Ask("Enter the issue number: "),
+                    Month = Ask("Enter Month: "),
+                    Type = type
+
                 },
                 _ => throw new ArgumentException("Invalid type selected")
             };

@@ -36,6 +36,13 @@ namespace LibrarySystemSln
             throw new KeyNotFoundException("Item ID not found.");
         }
 
+        public LibraryItem Filter( string type )
+        {
+            if (items.TryGetValue(type, out var item))
+                return item;
+            throw new KeyNotFoundException("Item ID not found.");
+        }
+
         public void DisplayItems()
         {
             if (items.Count == 0)

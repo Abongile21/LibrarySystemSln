@@ -14,7 +14,9 @@ namespace LibrarySystemSln
         public string Genre { get; set; }
         public override void Display()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"[Book] - ID: {ID}  Title: {Title}  Year: {Year} Author: {Author} Genre: {Genre}");
+            Console.ResetColor();
         }
     }
 }

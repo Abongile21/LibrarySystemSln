@@ -12,8 +12,11 @@ namespace LibrarySystemSln
         public string Director { get; set; }
         public string Duration { get; set; }
         public override void Display()
+
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"[DVD] - ID: {ID}  Title: {Title}  Year: {Year} Director: {Director} Duration: {Duration}");
+            Console.ResetColor();  
         }
     }
 }

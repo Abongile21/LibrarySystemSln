@@ -17,8 +17,12 @@
                     Console.WriteLine("1. Add Item");
                     Console.WriteLine("2. Remove Item");
                     Console.WriteLine("3. Search Item");
-                    Console.WriteLine("4. Display All Items");
-                    Console.WriteLine("5. Exit");
+                    Console.WriteLine("4. Filter by (dvd, magazine, book)");
+                    Console.WriteLine("5. Display All Items");
+
+
+                    Console.WriteLine("6. Exit");
+                   
                     Console.Write("Choose option: ");
                     string input = Console.ReadLine()!;
 
@@ -42,10 +46,14 @@
                             found.Display();
                             break;
                         case "4":
-                            library.DisplayItems();
+                            Console.Write("Enter type to search(dvd, book, magazine): ");
+                            LibraryItem foundtype = library.Filter(Console.ReadLine()!);
+                            foundtype.Display();
                             break;
                         case "5":
-                            return;
+
+                            library.DisplayItems();
+                            break;
                         default:
                             Console.WriteLine("Invalid input. Try again.");
                             break;

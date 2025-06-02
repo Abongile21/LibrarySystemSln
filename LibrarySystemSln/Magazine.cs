@@ -13,7 +13,9 @@ namespace LibrarySystemSln
         public string Month { get; set; }
         public override void Display()
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"[Magazine] - ID: {ID}  Title: {Title}  Year: {Year} IssueNumber: {IssueNumber} Month: {Month}");
+            Console.ResetColor();
 
         }
     }
