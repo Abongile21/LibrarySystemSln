@@ -9,6 +9,7 @@ namespace LibrarySystemSln
      class Library
     {
         private readonly Dictionary<string, LibraryItem> items = new();
+        private readonly int numDVD, numBooks, numMagazines;
 
         public void AddItem(LibraryItem item)
         {
@@ -36,11 +37,14 @@ namespace LibrarySystemSln
             throw new KeyNotFoundException("Item ID not found.");
         }
 
-        public LibraryItem Filter( string type )
+        public void Filter(string type)
         {
-            if (items.TryGetValue(type, out var item))
-                return item;
-            throw new KeyNotFoundException("Item ID not found.");
+            foreach (LibraryItem item in items.Values)
+
+            {
+               if(type==item.Type)
+                 item.Display();
+            }
         }
 
         public void DisplayItems()

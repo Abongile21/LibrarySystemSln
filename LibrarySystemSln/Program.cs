@@ -47,8 +47,9 @@
                             break;
                         case "4":
                             Console.Write("Enter type to search(dvd, book, magazine): ");
-                            LibraryItem foundtype = library.Filter(Console.ReadLine()!);
-                            foundtype.Display();
+                            string typeToFilter = Console.ReadLine()!;
+                            library.Filter(typeToFilter);
+                           
                             break;
                         case "5":
 
