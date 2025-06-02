@@ -13,7 +13,7 @@ namespace LibrarySystemSln
             Console.Write("Enter ID: ");
             var id = Console.ReadLine();
             Console.Write("Enter Title: ");
-            var title = Console.ReadLine();
+            string title = Console.ReadLine();
             Console.Write("Enter Year Published: ");
             int year = int.Parse(Console.ReadLine()!);
 
@@ -28,6 +28,7 @@ namespace LibrarySystemSln
                     Genre = Ask("Enter genre's name: ")
 
                 },
+
                 "dvd" => new DVD
                 {
                      ID = id,
@@ -38,8 +39,8 @@ namespace LibrarySystemSln
 
                 },
 
-                 "magazine" =>new Magazine
-                 {
+                "magazine" =>new Magazine
+                {
 
                      ID = id,
                      Title = title,
@@ -47,15 +48,8 @@ namespace LibrarySystemSln
                      IssueNumber=Ask("Enter the issue number: "),
                      Month= Ask("Enter Month: ")
                      
-                 }
-
-
-
-
-
+                }
             };
-
-
         }
 
 
