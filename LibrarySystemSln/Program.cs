@@ -8,7 +8,6 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
 
             while (true)
             {
@@ -21,25 +20,25 @@
                     Console.WriteLine("4. Display All Items");
                     Console.WriteLine("5. Exit");
                     Console.Write("Choose option: ");
-                    string input = Console.ReadLine();
+                    string input = Console.ReadLine()!;
 
                     switch (input)
                     {
                         case "1":
                             Console.Write("Enter Item Type (Book, Magazine, DVD): ");
-                            string type = Console.ReadLine();
-                            var item = LibraryManager.CreateItem(type);
+                            string type = Console.ReadLine()!;
+                            LibraryItem item = LibraryManager.CreateItem(type);
                             library.AddItem(item);
                             Console.WriteLine("Item added successfully.");
                             break;
                         case "2":
                             Console.Write("Enter ID to remove: ");
-                            library.DeleteItem(Console.ReadLine());
+                            library.DeleteItem(Console.ReadLine()!);
                             Console.WriteLine("Item removed.");
                             break;
                         case "3":
                             Console.Write("Enter ID to search: ");
-                            LibraryItem found = library.SearchItem(Console.ReadLine());
+                            LibraryItem found = library.SearchItem(Console.ReadLine()!);
                             found.Display();
                             break;
                         case "4":

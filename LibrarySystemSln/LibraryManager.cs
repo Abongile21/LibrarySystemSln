@@ -13,7 +13,7 @@ namespace LibrarySystemSln
             Console.Write("Enter ID: ");
             var id = Console.ReadLine();
             Console.Write("Enter Title: ");
-            string title = Console.ReadLine();
+            string title = Console.ReadLine()!;
             Console.Write("Enter Year Published: ");
             int year = int.Parse(Console.ReadLine()!);
 
@@ -48,7 +48,8 @@ namespace LibrarySystemSln
                      IssueNumber=Ask("Enter the issue number: "),
                      Month= Ask("Enter Month: ")
                      
-                }
+                },
+                _ => throw new ArgumentException("Invalid type selected")
             };
         }
 
@@ -57,7 +58,7 @@ namespace LibrarySystemSln
        public static string Ask(string prompt)
         {
             Console.Write(prompt);
-            return Console.ReadLine();
+            return Console.ReadLine()!;
 
         }
     }
