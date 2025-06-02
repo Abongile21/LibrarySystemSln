@@ -15,8 +15,10 @@ namespace LibrarySystemSln
 
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"[DVD] - ID: {ID}  Title: {Title}  Year: {Year} Director: {Director} Duration: {Duration}");
-            Console.ResetColor();  
+            Console.Write("[DVD] - ");
+            Console.ResetColor();
+
+            Console.WriteLine($"         ID: {ID}  Title: {Title}  Year: {Year} Director: {Director} Duration: {Duration}");
         }
     }
 }

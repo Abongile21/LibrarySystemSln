@@ -14,8 +14,10 @@ namespace LibrarySystemSln
         public override void Display()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine($"[Magazine] - ID: {ID}  Title: {Title}  Year: {Year} IssueNumber: {IssueNumber} Month: {Month}");
+            Console.Write("[Magazine] - ");
             Console.ResetColor();
+            Console.WriteLine($"         ID: {ID}  Title: {Title}  Year: {Year} IssueNumber: {IssueNumber} Month: {Month}");
+           
 
         }
     }

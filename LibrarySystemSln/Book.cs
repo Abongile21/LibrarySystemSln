@@ -15,8 +15,10 @@ namespace LibrarySystemSln
         public override void Display()
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"[Book] - ID: {ID}  Title: {Title}  Year: {Year} Author: {Author} Genre: {Genre}");
+            Console.Write("[Book] - ");
             Console.ResetColor();
+            Console.WriteLine($"         ID: {ID}  Title: {Title}  Year: {Year} Author: {Author} Genre: {Genre}");
+           
         }
     }
 }

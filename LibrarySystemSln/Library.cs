@@ -9,7 +9,7 @@ namespace LibrarySystemSln
      class Library
     {
         private readonly Dictionary<string, LibraryItem> items = new();
-        private readonly int numDVD, numBooks, numMagazines;
+        private  int numDVD, numBooks, numMagazines;
 
         public void AddItem(LibraryItem item)
         {
@@ -49,6 +49,7 @@ namespace LibrarySystemSln
 
         public void DisplayItems()
         {
+            
             if (items.Count == 0)
             {
                 Console.WriteLine("No items in the Library");
@@ -57,7 +58,19 @@ namespace LibrarySystemSln
             
             foreach(LibraryItem item in items.Values)
             {
-                    item.Display();
+                item.Display();
+                if (item.Type.ToLower() == "dvd")
+                {
+                    numDVD = item.ToString().Count();
+                }
+                if (item.Type.ToLower()=="book")
+                {
+                    numBooks = item.ToString().Count();
+                }
+                if (item.Type.ToLower() == "magazine")
+                {
+                    numMagazines = item.ToString().Count();
+                }
             }
             
         }
