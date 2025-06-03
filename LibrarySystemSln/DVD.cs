@@ -9,7 +9,7 @@ namespace LibrarySystemSln
    class DVD : LibraryItem
     {
 
-        public string Director { get; set; }
+        public string? Director { get; set; }
         public TimeSpan Duration { get; set; }
         public override void Display()
 

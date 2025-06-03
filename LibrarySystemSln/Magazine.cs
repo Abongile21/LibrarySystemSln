@@ -9,8 +9,8 @@ namespace LibrarySystemSln
     class Magazine : LibraryItem
     {
 
-        public string IssueNumber { get; set; }
-        public string Month { get; set; }
+        public string? IssueNumber { get; set; }
+        public string? Month { get; set; }
         public override void Display()
         {
             Console.ForegroundColor = ConsoleColor.Blue;

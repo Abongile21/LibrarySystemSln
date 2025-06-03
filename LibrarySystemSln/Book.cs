@@ -10,8 +10,8 @@ namespace LibrarySystemSln
     class Book : LibraryItem
     {
 
-        public string Author{get; set;}
-        public string Genre { get; set; }
+        public string? Author{get; set;}
+        public string? Genre { get; set; }
         public override void Display()
         {
             Console.ForegroundColor = ConsoleColor.Green;

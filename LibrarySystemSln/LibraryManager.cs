@@ -21,7 +21,7 @@ namespace LibrarySystemSln
             {
                 "book" => new Book
                 {
-                    ID = id,
+                    ID = id!,
                     Title = title,
                     Year = year,
                     Author = Ask("Enter author's name: "),
@@ -32,7 +32,7 @@ namespace LibrarySystemSln
 
                 "dvd" => new DVD
                 {
-                    ID = id,
+                    ID = id!,
                     Title = title,
                     Year = year,
                     Director = Ask("Enter director's name: "),
@@ -44,7 +44,7 @@ namespace LibrarySystemSln
                 "magazine" => new Magazine
                 {
 
-                    ID = id,
+                    ID = id!,
                     Title = title,
                     Year = year,
                     IssueNumber = Ask("Enter the issue number: "),
