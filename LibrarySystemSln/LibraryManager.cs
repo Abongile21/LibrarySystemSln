@@ -36,7 +36,7 @@ namespace LibrarySystemSln
                     Title = title,
                     Year = year,
                     Director = Ask("Enter director's name: "),
-                    Duration = Ask("Enter duration: "),
+                    Duration = TimeSpan.Parse(Ask("Enter duration(hh:mm:ss): ")),
                     Type = type
 
                 },
