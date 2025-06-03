@@ -35,8 +35,8 @@ This makes it both efficient and easy to manage for a console application.
 Search is **not limited to just ID**. We enhanced it to also:
 
 - Match partial or full **titles**.
-- Handle **case-insensitive** queries.
-- Return **multiple results**, if applicable.
+- Handle **case-insensitive** queries for filter by library item.
+- Return **multiple results**, if applicable(filter).
 - Gracefully inform the user if no match is found.
 
 This enhances the usability, especially for larger collections.
@@ -52,7 +52,6 @@ Robust error handling includes:
 - Informative error messages.
 - Safe fallback when operations fail (e.g., not crashing on invalid search/removal).
 
-The goal is to make the app as **bulletproof as possible** without overcomplicating the logic.
 
 ---
 
@@ -60,23 +59,16 @@ The goal is to make the app as **bulletproof as possible** without overcomplicat
 
 The architecture allows easy future upgrades:
 - Add new item types by extending `LibraryItem`.
-- Implement persistent storage (e.g., JSON or database).
-- Wrap the core logic into an API or GUI with minimal refactoring.
+- Implement  storage (e.g., JSON or database).
+- Wrap the core logic into an API or GUI.
 
 ---
 
-## Final Thoughts
+## Conclusion
 
 This app demonstrates a solid grasp of object-oriented design, efficient data structures, and clean console UI practices. Its thoughtful error handling and flexible search system elevate it above the typical CRUD CLI app.
 
----
 
-## Listen to the Audio Summary
-
-<audio controls>
-  <source src="presentation-summary.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
 ---
 
