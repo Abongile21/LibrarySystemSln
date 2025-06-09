@@ -32,9 +32,8 @@ This makes it both efficient and easy to manage for a console application.
 
 ## Improved Search Strategy
 
-Search is **not limited to just ID**. We enhanced it to also:
+Search is **not limited to just ID** as it has **filter**. We enhanced it to also:
 
-- Match partial or full **titles**.
 - Handle **case-insensitive** queries for filter by library item.
 - Return **multiple results**, if applicable(filter).
 - Gracefully inform the user if no match is found.
@@ -68,6 +67,9 @@ The architecture allows easy future upgrades:
 
 This app demonstrates a solid grasp of object-oriented design, efficient data structures, and clean console UI practices. Its thoughtful error handling and flexible search system elevate it above the typical CRUD CLI app.
 
+---
+
+## Slides 
 
 
 ---
