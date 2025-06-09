@@ -71,6 +71,7 @@ This app demonstrates a solid grasp of object-oriented design, efficient data st
 
 ## Slides 
 
+- Link : [Library Manager Slides](https://lib-sys-man-slides.vercel.app/)
 
 ---
 
